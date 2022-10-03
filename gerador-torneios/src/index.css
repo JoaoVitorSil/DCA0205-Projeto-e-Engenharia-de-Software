@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  font-family: "Anton"!important;
+}
+
+body {
+  background: #0c0b3f url('./assets/Prancheta\ 1\ 2.png') center center !important;
+  height: 100vh;
+  color: #fff!important
+}
+
+.header-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.beje {
+  background: #999933!important;
+  border-radius: 20px;
+  border: 3px solid #FFF!important;
+  width: 180px;
+  height: 64px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff!important;
+}
+
+.cadastro h1 {
+  font-size: 80px;
+  letter-spacing: 5px;
+}
+#nome-torneio {
+  width: 600px;
+  height: 60px;
+  background: #d9d9d9;
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 30px;
+}
+#nome-torneio::-webkit-input-placeholder {
+  font-size: 30px;
+}
+
+#data-torneio {
+  width: 300px;
+  height: 60px;
+  margin-top: 16px;
+  background: #d9d9d9;
+  border-radius: 16px;
+  padding: 8px;
+  font-size: 20px;
+  color: grey;
+}
+
+#data-torneio:active {
+  color: #000;
+}
+
+#nome-jogador {
+  width: 600px;
+  height: 60px;
+  background: #d9d9d9;
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 30px;
+}
+#nome-jogador::-webkit-input-placeholder {
+  font-size: 30px;
+}
+
+.lista-jogadores{
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+  
+button:hover {
+  background: none !important;
+  }

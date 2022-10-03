@@ -1,0 +1,504 @@
+{
+  "torneios": [
+    {
+      "id": 1,
+      "nome": "Primeiro torneio",
+      "data": "19/09/2022",
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "jao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 2,
+          "nome": "Pinto 2",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 3,
+          "nome": "Pinto 3",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 4,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 5,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 6,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 7,
+          "nome": "NFT 3",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 8,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 9,
+          "nome": "NFT 23",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 10,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 11,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 12,
+          "nome": "NFT 232",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 13,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 14,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 15,
+          "nome": "Joao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 16,
+          "nome": "Joao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 17,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 18,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 19,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 20,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 21,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 22,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 23,
+          "nome": "Pinto",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 24,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 25,
+          "nome": "",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 26,
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 27,
+          "nome": "Cicero",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 28,
+          "nome": "Pica",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 29,
+          "nome": "Ewerto",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 30,
+          "nome": "Teste",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 31,
+          "nome": "Joao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Torneio de cruzeta",
+      "data": "2022-09-30",
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "jao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 2,
+          "nome": "Cicero",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 3,
+          "nome": "Ewerton",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 4,
+          "nome": "Lucas",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 5,
+          "nome": "Aristitides",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 6,
+          "nome": "Rodolfo",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 7,
+          "nome": "Tesete",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 8,
+          "nome": "Limao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 9,
+          "nome": "Josue",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 10,
+          "nome": "Horacio",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 11,
+          "nome": "Hernandes",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 12,
+          "nome": "Louise",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 13,
+          "nome": "Larissa",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 14,
+          "nome": "Sarue",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 15,
+          "nome": "Akita",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 16,
+          "nome": "Kilomab",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 17,
+          "nome": "Abaporu",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 18,
+          "nome": "Limoeiro",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 19,
+          "nome": "Sicrano",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 20,
+          "nome": "Juan",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 21,
+          "nome": "Tiamet",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 22,
+          "nome": "Naco",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 23,
+          "nome": "Limso",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 24,
+          "nome": "aswe",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        },
+        {
+          "id": 25,
+          "nome": "NFT",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Torneio de cruzeta 2",
+      "data": "2022-09-30",
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "jao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "XI Torneio de xadrez",
+      "data": "2022-09-20",
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "jao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "XII Torneio de xadrez",
+      "data": "2022-09-22",
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "jao",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
+        }
+      ]
+    }
+  ]
+}
