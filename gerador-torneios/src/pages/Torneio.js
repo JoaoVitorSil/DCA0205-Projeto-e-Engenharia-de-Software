@@ -26,19 +26,30 @@ export default function Torneio() {
        {cadatrado && (
       <Navigate to={`/jogadores/${idTorneio}`} replace={true} />
     )}
-        <h1>Novo torneio</h1>
+      <div className="container">
+      <div className="d-flex justify-content-center mt-5">
+      <h1 className='text-center'>Novo torneio</h1>
+      </div>
+      <div className='d-flex justify-content-center my-3'>
         <input type="text" 
-        id="nome-torneio" 
-        placeholder="Digite o nome do torneio..." 
-        value={nome}
-        onChange={(e)=> setNome(e.target.value)}
-        required />
+          id="nome-torneio" 
+          placeholder="Digite o nome do torneio..." 
+          value={nome}
+          onChange={(e)=> setNome(e.target.value)}
+          required />
+      </div>
+      
+      <div className='d-flex justify-content-center my-3'>
         <input type="date" 
-        id="data-torneio" 
-        value={data}
-        onChange={(e)=> setData(e.target.value)}
-        required/>
-        <button onClick={handleTorneio} >Criar Torneio</button>
+          id="data-torneio" 
+          value={data}
+          onChange={(e)=> setData(e.target.value)}
+          required/>
+      </div>
+      <div className='d-flex justify-content-center my-3'>
+        <button className="beje" onClick={handleTorneio} >Criar Torneio</button>
+      </div>
+      </div>   
     </div>
    
   )

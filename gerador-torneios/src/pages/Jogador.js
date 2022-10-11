@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import add from "../assets/add.png"
 import api from "../api"
 import { useParams } from 'react-router-dom'
-export default function Jogador(props) {
+export default function Jogador() {
 
   const [nome, setNome] = useState()
   const [jogadores, setJogadores] = useState([{}])
