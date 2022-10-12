@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import api, { getJogadores } from "../api";
+import api from "../api";
 import { useParams } from "react-router-dom";
 
 export default function Tabela() {
@@ -8,7 +8,9 @@ export default function Tabela() {
   const { id } = useParams();
   async function getJogadores() {
     const torneio = await api.get(`http://localhost:4000/torneios/${id}`);
-    setJogadores(torneio.data.jogadores);
+    const jogadoresSorted =  torneio.data.jogadores.sort(({pontos:a},{pontos: b})=> b-a)
+    setJogadores(jogadoresSorted);
+   
   }
   useEffect(() => {
     getJogadores();
