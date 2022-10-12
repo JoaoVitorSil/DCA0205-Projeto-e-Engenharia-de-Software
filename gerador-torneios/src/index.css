@@ -73,14 +73,16 @@ body {
   font-size: 30px;
 }
 
+.partida-card{
+background: #663366;
+border-radius: 20px;
+}
 tr:nth-child(1){
-  border-radius: 8px  !important;
+  background: rgba(255, 255, 255, 0.1)!important;
 }
 
-tr:nth-last-child(1){
-  border-radius: 0px 0px 8px 8px;
-}
-tr:nth-child(-n+3){
+
+tr:nth-child(-n+4){
   background: rgba(0, 255, 0, 0.25);
 }
 
@@ -93,6 +95,7 @@ tr:nth-last-child(-n+3){
 }
 
 td,th{
+  font-weight: normal;
   padding: 10px;
   border: 5px solid #FFFFFF;
   border-radius: 0px 0px 8px 8px;

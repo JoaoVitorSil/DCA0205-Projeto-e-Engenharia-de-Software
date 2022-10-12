@@ -26,10 +26,10 @@ export default function Tabela() {
           <table className="w-100 m-3">
             <tr>
               <th>Jogador</th>
-              <th>V</th>
-              <th>E</th>
-              <th>D</th>
-              <th>PT</th>
+              <th>Vitórias</th>
+              <th>Empates</th>
+              <th>Derrotas</th>
+              <th>Pontuação</th>
             </tr>
 
             {jogadores.map((jogador, index) => {

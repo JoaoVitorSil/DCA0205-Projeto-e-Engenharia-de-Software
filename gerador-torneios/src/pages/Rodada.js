@@ -32,18 +32,30 @@ const onRightClickHandler = () => {
 }
 
   return (
-    <>
+    <div className='container'>
      <Pagination
             page={page+1}
             totalPages={totalPages}
             onLeftClick={onLeftClickHandler}
             onRightClick={onRightClickHandler}
         />
-    {rodadas[page].partidas && rodadas[page].partidas.map((partida)=>{
-      return(<h1>{partida.jogadorBrancas} x {partida.jogadorPretas}</h1>)
+    <div className="row">
+      
+      {rodadas[page].partidas && rodadas[page].partidas.map((partida)=>{
+      return(
+      <div className="col-3 mt-5">
+        <div className='partida-card p-3 '>
+          <h3 className='text-start ms-3'>{partida.jogadorBrancas}</h3>
+          <p className='text-start ms-5'>x</p>
+          <h3 className='text-start ms-3'>{partida.jogadorPretas}</h3>
+            
+        
+        </div>
+        </div>)
     })}
+      </div>
     
-    </>
+    </div>
     
   )
 }
