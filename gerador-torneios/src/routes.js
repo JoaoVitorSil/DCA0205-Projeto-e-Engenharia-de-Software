@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header';
 import Jogador from './pages/Jogador';
 import Torneio from './pages/Torneio';
+import Tabela from './pages/Tabela';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Rodada from './pages/Rodada';
 export default function RoutesApp() {
@@ -12,6 +13,7 @@ export default function RoutesApp() {
       <Route path="/" element={<Torneio/>} />
       <Route path="/jogadores/:id" element={<Jogador/>} />
       <Route path="/rodadas/:id" element={<Rodada/>} />
+      <Route path="/tabela/:id" element={<Tabela/>} />
     </Routes>
 </BrowserRouter>
   )

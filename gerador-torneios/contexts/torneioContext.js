@@ -1,7 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 
-
 const TorneioContext = createContext();
 
 export const TorneioProvider = ({ children }) => {
