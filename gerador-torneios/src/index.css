@@ -77,6 +77,10 @@ body {
 background: #663366;
 border-radius: 20px;
 }
+.result{
+  display: flex;
+  justify-content: space-between;
+}
 tr:nth-child(1){
   background: rgba(255, 255, 255, 0.1)!important;
 }
