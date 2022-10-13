@@ -6,9 +6,12 @@ export default function Rodada() {
   const [page, setPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const [rodadas,setRodadas] = useState([{}]);
+  const [jogadores, setJogadores] = useState([{}]);
+  
   const { id } = useParams()
   async function getRodadas(){
     const torneio = await api.get(`http://localhost:4000/torneios/${id}`)
+    setJogadores(torneio.data.jogadores)
     setRodadas(torneio.data.rodadas)
     setTotalPages(torneio.data.rodadas.length)
     console.log(rodadas)
