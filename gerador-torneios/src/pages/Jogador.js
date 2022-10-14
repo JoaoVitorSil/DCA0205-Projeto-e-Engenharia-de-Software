@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import add from "../assets/add.png"
+import del from "../assets/delete.png"
 import api from "../api"
+import { Navigate } from "react-router-dom";
 import { useParams } from 'react-router-dom'
 export default function Jogador() {
 
   const [nome, setNome] = useState()
   const [jogadores, setJogadores] = useState([{}])
+  const [cadatrado, setCadastrado] = useState(false);
+
   const { id } = useParams()
   async function getJogadores(){
-    const torneio = await api.get(`http://localhost:4000/torneios/${id}`)
-    setJogadores(torneio.data.jogadores)
+    const jogadores = await api.get(`http://localhost:8080/jogadores/${id}`)
+    setJogadores(jogadores.data.jogadores)
   }
   useEffect(() => {
     getJogadores()
@@ -19,23 +23,17 @@ export default function Jogador() {
   }, [])
   
   async function handleJogadores(){
-    const torneio = await api.get(`http://localhost:4000/torneios/${id}`)
-    const response = await api.patch(`http://localhost:4000/torneios/${id}`, 
-    { 
-      jogadores:[...torneio.data.jogadores,{
-        id: torneio.data.jogadores.length + 1,
-        nome: nome,
-        pontos: 0,
-        vitorias: 0,
-        empates: 0,
-        derrotas: 0}]});
-    console.log(response.data.jogadores)
-    setJogadores(response.data.jogadores)
-    setNome('')
+    const request = await api.post("http://localhost:4000/jogadores/")
+    //setJogadores(response.data.jogadores)
+    setNome('');
+    setCadastrado(true);
   }
   console.log(jogadores)
   return (
   <div className="container">
+    {cadatrado && (
+      <Navigate to={`/criar/torneio/${id}`} replace={true} />
+    )}
     <div className="d-flex justify-content-center mt-5">
     <h1 className='text-center'>Inserir Jogadores</h1>
     </div>
@@ -48,10 +46,13 @@ export default function Jogador() {
     onChange={(e)=> setNome(e.target.value)} 
     required />
     </div>
-    <div className='d-flex justify-content-center'>
+    <div className='d-flex justify-content-center buttons'>
     <button className='btn beje' onClick={handleJogadores}>
         <img src={add} alt="add-icon"/>
         Adicionar</button>
+    <button className='btn beje' onClick={handleJogadores}>
+        <img src={del} alt="del-icon"/>
+        Remover</button>
     </div>
     
     <div className="d-flex justify-content-center lista-jogadores m-5 p-4">
@@ -60,7 +61,7 @@ export default function Jogador() {
     })}
     </div>
     <div class="d-flex justify-content-end align-items-end">
-    <button className='btn beje mb-5'>Gerar Torneio !</button>
+    <button className='btn beje mb-5'>Criar Torneio !</button>
     </div>
     
     

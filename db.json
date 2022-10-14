@@ -247,93 +247,97 @@
           "derrotas": 0
         }
       ],
-      "rodadas":[
-        {"id": 1,
-        "partidas":[{
+      "rodadas": [
+        {
           "id": 1,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
+          "partidas": [
+            {
+              "id": 1,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 2,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 3,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 4,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 5,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 6,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 7,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 8,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            }
+          ]
         },
         {
           "id": 2,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
-        },
-        {
-          "id": 3,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
-        },
-        {
-          "id": 4,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
-        },
-        {
-          "id": 5,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
-        },
-        {
-          "id": 6,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
-        },
-        {
-          "id": 7,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
-        },
-        {
-          "id": 8,
-          "jogadorBrancas":"Fulano",
-          "jogadorPretas": "Sicrano"
+          "partidas": [
+            {
+              "id": 1,
+              "jogadorBrancas": "Josué",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 2,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Shimana"
+            },
+            {
+              "id": 3,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Cascão"
+            },
+            {
+              "id": 4,
+              "jogadorBrancas": "Biloca",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 5,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 6,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 7,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            },
+            {
+              "id": 8,
+              "jogadorBrancas": "Fulano",
+              "jogadorPretas": "Sicrano"
+            }
+          ]
         }
-      ]
-      },
-      {"id": 2,
-      "partidas":[{
-        "id": 1,
-        "jogadorBrancas":"Josué",
-        "jogadorPretas": "Sicrano"
-      },
-      {
-        "id": 2,
-        "jogadorBrancas":"Fulano",
-        "jogadorPretas": "Shimana"
-      },
-      {
-        "id": 3,
-        "jogadorBrancas":"Fulano",
-        "jogadorPretas": "Cascão"
-      },
-      {
-        "id": 4,
-        "jogadorBrancas":"Biloca",
-        "jogadorPretas": "Sicrano"
-      },
-      {
-        "id": 5,
-        "jogadorBrancas":"Fulano",
-        "jogadorPretas": "Sicrano"
-      },
-      {
-        "id": 6,
-        "jogadorBrancas":"Fulano",
-        "jogadorPretas": "Sicrano"
-      },
-      {
-        "id": 7,
-        "jogadorBrancas":"Fulano",
-        "jogadorPretas": "Sicrano"
-      },
-      {
-        "id": 8,
-        "jogadorBrancas":"Fulano",
-        "jogadorPretas": "Sicrano"
-      }
-    ]
-    }
       ]
     },
     {
@@ -540,6 +544,14 @@
           "vitorias": 0,
           "empates": 0,
           "derrotas": 0
+        },
+        {
+          "id": 26,
+          "nome": "lindo",
+          "pontos": 0,
+          "vitorias": 0,
+          "empates": 0,
+          "derrotas": 0
         }
       ]
     },
@@ -589,5 +601,4 @@
       ]
     }
   ]
-
 }

@@ -10,8 +10,8 @@ export default function RoutesApp() {
     <BrowserRouter>
     <Header/> 
     <Routes>
-      <Route path="/" element={<Torneio/>} />
-      <Route path="/jogadores/:id" element={<Jogador/>} />
+      <Route path="/" element={<Jogador/>} />
+      <Route path="/torneio/:id" element={<Torneio/>} />
       <Route path="/rodadas/:id" element={<Rodada/>} />
       <Route path="/tabela/:id" element={<Tabela/>} />
     </Routes>

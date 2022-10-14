@@ -10,7 +10,7 @@ export default  function Header() {
       setTorneioNome(torn.data.nome)
   }
   getTorneioName()
-  const novoTorneio = window.location.pathname === "/" ? true:false
+  const novoTorneio = window.location.pathname === "/criar/torneio/:id" ? true:false
 
   return (
     <nav className="navbar p-2 my-2">
