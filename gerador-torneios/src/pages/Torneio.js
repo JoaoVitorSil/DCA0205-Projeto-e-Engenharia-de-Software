@@ -1,31 +1,65 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect} from 'react'
 import { Navigate } from "react-router-dom";
 import api from "../api"
 export default function Torneio() {
-  const [idTorneio, setIdTorneio] = useState()
   const [nome, setNome] = useState('')
-  const [data, setData] = useState('')
-  const [cadatrado, setCadastrado] = useState(false)
+  const [jogadorSelecionado, setJogadorSelecionado] = useState('')
+  const [jogadores, setJogadores] = useState([])
+  const [jogadoresSelecionados,setJogadoresSelecionados] = useState([])
+
+  async function getJogadores(){
+    const jogadores = await api.get(`http://localhost:8080/jogadores/`)
+    console.log('Jogadores aaa',jogadoresSelecionados)
+    setJogadores(jogadores.data)
+  }
+
+  function getJogadoresSelecionados(){
+    setJogadoresSelecionados(jogadoresSelecionados)
+
+  }
+
+  useEffect(() => {
+    getJogadores()
+    return () => {
+      console.log('This will be logged on unmount');
+    };
+  }, [])
+  
+  useEffect(() => {
+    getJogadoresSelecionados()
+    return () => {
+      console.log('This will be logged on unmount');
+    };
+  }, [jogadoresSelecionados])
+
+
+  const onSelectHandler = (e) => {
+    setJogadorSelecionado(e.target.value) 
+    console.log(e.target.value);
+
+  }
+
+  const confirmSelectHandler = ()=>{
+    jogadoresSelecionados.push(jogadorSelecionado)
+    console.log(jogadoresSelecionados)
+  }
+ 
 
   async  function handleTorneio(){
     try{
-      const torneios = await api.get('http://localhost:4000/torneios/') 
-      setIdTorneio(torneios.data.length + 1)
-      const response = await api.post('http://localhost:4000/torneios/', {id: idTorneio, nome: nome, data: data, jogadores:[]});
-      setCadastrado(true)
+      let formData = new FormData();
+      formData.append('name',nome)
+      formData.append('players', jogadoresSelecionados)
+      const response = await api.post('http://localhost:8080/torneios/', formData);
+      window.location.href = `/rodadas/${nome}`
     }
     catch{
-      setCadastrado(false)
       setNome('')
-      setData('')
     }
   }
   return (
    
     <div class="cadastro-torneio">
-       {cadatrado && (
-      <Navigate to={`/jogadores/${idTorneio}`} replace={true} />
-    )}
       <div className="container">
       <div className="d-flex justify-content-center mt-5">
       <h1 className='text-center'>Novo torneio</h1>
@@ -40,15 +74,21 @@ export default function Torneio() {
       </div>
       
       <div className='d-flex justify-content-center my-3'>
-        <input type="date" 
-          id="data-torneio" 
-          value={data}
-          onChange={(e)=> setData(e.target.value)}
-          required/>
+      <select id='player-torneio' onChange={onSelectHandler}>
+        <option>-----</option>
+        {jogadores && jogadores.map((jogador, index) => {
+      return (<option  value={jogador.name}>{jogador.name}</option>)})}
+      </select>
+      <button onClick={confirmSelectHandler}>Adicionar jogador</button>
       </div>
       <div className='d-flex justify-content-center my-3'>
         <button className="beje" onClick={handleTorneio} >Criar Torneio</button>
+        
       </div>
+      {jogadoresSelecionados.map((jogador, index) => {
+        
+        return (<h4 className='d-flex justify-content-space-between m-3 ' key={index}>{jogador}</h4>)
+      })}
       </div>   
     </div>
    

@@ -11,7 +11,7 @@ export default function RoutesApp() {
     <Header/> 
     <Routes>
       <Route path="/" element={<Jogador/>} />
-      <Route path="/torneio/:id" element={<Torneio/>} />
+      <Route path="/torneio/" element={<Torneio/>} />
       <Route path="/rodadas/:id" element={<Rodada/>} />
       <Route path="/tabela/:id" element={<Tabela/>} />
     </Routes>

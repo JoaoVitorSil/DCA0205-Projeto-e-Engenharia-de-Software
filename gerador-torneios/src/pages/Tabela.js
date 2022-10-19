@@ -7,10 +7,19 @@ export default function Tabela() {
   const [jogadores, setJogadores] = useState([{}]);
   const { id } = useParams();
   async function getJogadores() {
-    const torneio = await api.get(`http://localhost:4000/torneios/${id}`);
-    const jogadoresSorted =  torneio.data.jogadores.sort(({pontos:a},{pontos: b})=> b-a)
+    const pla = [{}];
+    const torneio = await api.get(`http://localhost:8080/torneios/?name=${id}`);
+    torneio.data.players.map((pl,index) =>{
+      const performance = pl.performances.find(tName => tName.tournamentName === id)
+      const jogador = {'name': pl.name, ...performance}
+      pla.push(jogador)
+      
+      console.log(performance)
+    })
+    pla.shift()
+    const jogadoresSorted =  pla.sort(({points:a},{points: b})=> b-a)
     setJogadores(jogadoresSorted);
-   
+ 
   }
   useEffect(() => {
     getJogadores();
@@ -18,6 +27,10 @@ export default function Tabela() {
       console.log("This will be logged on unmount");
     };
   }, []);
+
+  const verRodadas = () =>{
+    window.location.href = `/rodadas/${id}`
+  }
   return (
     <div className="container">
       <div className="row">
@@ -33,17 +46,21 @@ export default function Tabela() {
             </tr>
 
             {jogadores.map((jogador, index) => {
+              console.log(jogador)
               return (
                 <tr key={index}>
-                  <td>{jogador.nome}</td>
-                  <td>{jogador.vitorias}</td>
-                  <td>{jogador.empates}</td>
-                  <td>{jogador.derrotas}</td>
-                  <td>{jogador.pontos}</td>
+                  <td>{jogador.name}</td>
+                  <td>{jogador.numWins}</td>
+                  <td>{jogador.numDraws}</td>
+                  <td>{jogador.numLosses}</td>
+                  <td>{jogador.points/2}</td>
                 </tr>
               );
             })}
           </table>
+          <div className='d-flex justify-content-center my-3'>
+        <button className="beje" onClick={verRodadas}>Ver Rodadas</button>
+        </div>
         </div>
       </div>
     </div>
